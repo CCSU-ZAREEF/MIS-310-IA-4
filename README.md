@@ -1,1 +1,5 @@
 # MIS-310-IA-4
+
+This project is a simple graphical calculator application built using Python’s Tkinter library. It creates a window titled “My_Calculator” with a display field at the top and a standard calculator button layout below. The interface includes digits (0–9), basic operators (`+`, `-`, `*`, `/`), a decimal point, a Clear button, and an = button to evaluate the expression.
+
+Internally, the calculator keeps track of the current input as a string (`expression`). When the user clicks a number or operator button, that value is appended to the expression and shown in the display. The Clear button resets the expression and clears the screen. When the user presses =, the program uses Python’s `eval()` function inside a `try`/`except` block to compute the result. If the expression is valid, the result is shown in the display; if an error occurs (for example, invalid input), the calculator shows “Error” and resets. This assignment demonstrates basic GUI layout, event handling, shared state via `StringVar`, and simple expression evaluation in Python.
